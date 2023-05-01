@@ -1,10 +1,12 @@
 import React from "react"
-
+import Mainpng from "./assets/Main.png"
 export default function Header()
 {
     return(
-        <div className="head">
-           <h3>Add a new list here</h3> 
-        </div>
+       
+            <span className="set"><h2 className="todo_heading">ToDo App</h2> 
+            <img className="notepad"src={Mainpng}/>
+            </span>
+
     )
 }

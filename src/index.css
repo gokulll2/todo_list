@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
 body{
  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);;
 }
@@ -10,5 +18,53 @@ body{
   justify-content: center;
   align-items:center;
   bottom: 200px;
+}
+.main{
+  background-color: whitesmoke;
+  min-height: 35vh;
+  min-width: 25vw;
+  border-radius: 10px;
+  box-shadow:2px 2px 5px grey; ;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 20px;
+}
+.input-box{
+  width:18vw;
+  height: 37px;
+  border-radius: 5px ;
+  margin: 10px 10px;
+  font-size: 20px;
+  outline:none;
+  transition: all 0.3s ease;
+  box-shadow:2px 2px 5px grey; ;
+  opacity: 0.6;
+  border-color: beige;
+  margin-bottom:20px ;
+}
+.notepad{
+  height: 70px;
+  width: 70px;
+}
+.set{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.plus-icon{
+  height: 40px;
+  width: 30px;
+  position: relative;
 
+}
+.todo_heading{
+  padding-top: 20px;
+}
+.Show-items{
+  display: flex;
+  justify-content: center;
+}
+.eachitem{
+  display: flex;
+  justify-content: center;
 }
