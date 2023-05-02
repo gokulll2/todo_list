@@ -52,9 +52,10 @@ body{
   justify-content: center;
 }
 .plus-icon{
-  height: 40px;
+  height: 44px;
   width: 30px;
   position: relative;
+  padding-bottom: 5px;
 
 }
 .todo_heading{
@@ -63,8 +64,24 @@ body{
 .Show-items{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .eachitem{
   display: flex;
+  justify-content: space-between;
+  background-color: lightgoldenrodyellow;
+  border-radius: 5px;
+  align-items: center;
+}
+.Add-items{
+  display: flex;
+  align-items: center;
+}
+/* .eachitem{
+  display: flex;
   justify-content: center;
+} */
+.to-do-btn{
+  display: flex;
+  gap: 10px;
 }
