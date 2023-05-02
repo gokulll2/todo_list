@@ -52,11 +52,10 @@ body{
   justify-content: center;
 }
 .plus-icon{
-  height: 44px;
+  height: 30px;
   width: 30px;
   position: relative;
   padding-bottom: 5px;
-
 }
 .todo_heading{
   padding-top: 20px;
@@ -66,12 +65,25 @@ body{
   justify-content: center;
   margin-top: 20px;
 }
+.apple{
+  padding-left:10px;
+}
 .eachitem{
   display: flex;
   justify-content: space-between;
-  background-color: lightgoldenrodyellow;
-  border-radius: 5px;
+  background-color: rgb(161, 218, 231);
+  border-radius: 10px;
   align-items: center;
+  height: 40px;
+}
+.space{
+  display: flex;
+  flex-direction: column;
+  gap:7px;
+}
+.eachitem:hover,
+.eachitem:focus{
+  box-shadow: inset 6.5em 0 0 0 #8fc866,;
 }
 .Add-items{
   display: flex;
@@ -84,4 +96,62 @@ body{
 .to-do-btn{
   display: flex;
   gap: 10px;
+}
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+.effect04:hover {
+  background-color: rgb(85, 41, 220);
+}
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
 }
